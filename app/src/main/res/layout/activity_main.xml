@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AutoTune Voice"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Entrada de áudio: verificando..."
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pronto para gravar"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:text="00:00"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nível de entrada" />
+
+        <br.com.autotunevoice.VuMeterView
+            android:id="@+id/vuMeter"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tonalidade/escala" />
+
+        <Spinner
+            android:id="@+id/spinnerScale"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Intensidade da correção" />
+
+        <SeekBar
+            android:id="@+id/seekStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="75" />
+
+        <TextView
+            android:id="@+id/txtStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="75% — correção forte" />
+
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="GRAVAR" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:text="PARAR E CORRIGIR" />
+
+        <Button
+            android:id="@+id/btnPlayOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:text="OUVIR ORIGINAL" />
+
+        <Button
+            android:id="@+id/btnPlayCorrected"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:text="OUVIR CORRIGIDO" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Dois arquivos são salvos na pasta AutoTuneVoice: o original e o corrigido. Você pode usar o áudio direto do celular, ou microfones conectados via plug P2 ou do tipo USB-C."
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
