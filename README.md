@@ -22,3 +22,17 @@ Basta abrir o app: se nenhum microfone externo estiver conectado, ele usa o micr
 
 ## Limitação da versão 1.0
 O corretor é um algoritmo offline leve e experimental, sem biblioteca comercial de Auto-Tune. Ele funciona melhor com voz isolada, pouco ruído e sem instrumentos vazando no microfone. O deslocamento de afinação é limitado a cerca de ±3,86 semitons por trecho, então desafinações muito grandes são corrigidas apenas parcialmente.
+
+## Apoie o projeto (doação via PIX)
+Este app é gratuito e de código aberto. Se ele foi útil pra você, considere uma doação via PIX:
+
+**Chave aleatória:** `fce13f3c-310d-4c5a-8816-efb2e0458842`
+**Beneficiário:** Claudio Jose Toldo — Criciúma/SC
+
+![QR Code PIX](pix_qrcode.png)
+
+Ou copie o código abaixo e cole no Pix Copia e Cola do app do seu banco:
+
+```
+00020101021126580014br.gov.bcb.pix0136fce13f3c-310d-4c5a-8816-efb2e04588425204000053039865802BR5918CLAUDIO JOSE TOLDO6008CRICIUMA62070503***6304BDB9
+```
